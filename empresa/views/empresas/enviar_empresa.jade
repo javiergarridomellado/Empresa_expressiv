@@ -1,0 +1,28 @@
+extends ../layout
+block content
+  h1 Valoración de Practicas en Empresas
+  form(method="post", action="/enviar_empresa")
+    label Empresa : 
+    input(type="text", name="asunto", placeholder=" Nombre de la Empresa")
+    br
+    label Alumno : 
+    input(type="text", name="mensaje", placeholder=" Nombre del Alumno")
+    br
+    label Fecha de inicio : 
+    input(type="date", name="fechainicio")
+    br
+    label Fecha de finalización : 
+    input(type="date", name="fechafinalizacion")
+    br
+    label Calificación :
+    input(type="number", name="calificacion", min="0", max="10")
+    br
+    input(type="submit", value="Enviar empresa")
+  ul
+    -for (i in lista)
+      li  Empresa: #{lista[i].asunto}
+      li  Alumno : #{lista[i].mensaje}
+      li  Fecha de Inicio : #{lista[i].fechainicio}
+      li  Fecha de Finalizacion : #{lista[i].fechafinalizacion}
+      li  Calificación : #{lista[i].calificacion}
+      br		
