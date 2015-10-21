@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "empresa",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +13,17 @@
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "jade": "~1.3.0"
+  },
+  "description": "Ejercicio_de_iv",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javiergarridomellado/Empresa_expressiv.git"
+  },
+  "author": "Javier Garrido",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/javiergarridomellado/Empresa_expressiv/issues"
   }
 }
