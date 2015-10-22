@@ -16,7 +16,11 @@
   },
   "description": "Ejercicio_de_iv",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-docco": "~0.4.0",
+    "docco": "~0.7.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/javiergarridomellado/Empresa_expressiv.git"
