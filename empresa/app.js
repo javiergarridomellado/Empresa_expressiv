@@ -29,8 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
 
-//assert
-//app.use('/alumnos', alumnos);
+
 //anadido
 app.get('/alumnos', empresas.get_listar_alumnos);
 //
