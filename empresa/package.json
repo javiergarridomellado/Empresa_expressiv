@@ -29,5 +29,8 @@
   "license": "GNU",
   "bugs": {
     "url": "https://github.com/javiergarridomellado/Empresa_expressiv/issues"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/test.js"
   }
 }
