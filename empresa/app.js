@@ -30,7 +30,7 @@ app.use(app.router);
 
 
 
-//anadido
+//anadido peq cambio
 app.get('/alumnos', empresas.get_listar_alumnos);
 //
 
