@@ -9,6 +9,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes');
 var users = require('./routes/user');
 
+//anadido assert
+var alumnos = require('./routes/empresas');
+//
 var app = express();
 
 var empresas = require('./routes/empresas');
@@ -25,6 +28,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.router);
 
+
+//assert
+//app.use('/alumnos', alumnos);
+app.get('/alumnos', empresas.get_listar_alumnos);
+//
+
+
 app.get('/', routes.index);
 app.get('/users', users.list);
 //anadido
@@ -37,7 +47,11 @@ app.post('/enviar_empresa', empresas.post_enviar_empresa);
 
 app.get('/eliminar_empresa', empresas.get_eliminar_empresa);
 app.post('/eliminar_empresa', empresas.post_eliminar_empresa);
+
+
+
 //
+
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
